@@ -1,5 +1,6 @@
 import React from "react";
 import { useParams, useNavigate } from "react-router-dom";
+import "../Adornos/InformationPage.css";
 
 const informationData = {
   1: {
@@ -83,10 +84,10 @@ const InformationPage = () => {
   }
 
   return (
-    <div style={{ padding: "20px", textAlign: "center" }}>
+    <div className="information-page">
       <h2>{topic.title}</h2>
       <div>{topic.content}</div>
-      <button onClick={() => navigate(-1)} style={{ marginTop: "20px" }}>
+      <button onClick={() => navigate(-1)} className="return-button">
         Volver
       </button>
     </div>
@@ -94,4 +95,3 @@ const InformationPage = () => {
 };
 
 export default InformationPage;
-
