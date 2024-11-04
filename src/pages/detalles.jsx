@@ -39,7 +39,7 @@ const Detalle = () => {
                 alignItems: "center",
                 justifyContent: "center",
                 borderRadius: "10px",
-                color: "#fff",
+                color: "#000000",
                 fontWeight: "bold",
                 textAlign: "center",
                 cursor: "pointer",
