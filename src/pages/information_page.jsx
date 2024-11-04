@@ -1,74 +1,97 @@
 import React from "react";
-import { Link } from "react-router-dom";
+import { useParams, useNavigate } from "react-router-dom";
 
-const topics = [
-  { id: 1, title: "Importancia de la salud mental", color: "#b39ddb" },
-  {
-    id: 2,
+const informationData = {
+  1: {
+    title: "Importancia de la salud mental",
+    content: (
+      <>
+        <p>
+          La salud mental es fundamental para nuestro bienestar general, ya que
+          afecta cómo pensamos, sentimos y actuamos en nuestra vida diaria.
+        </p>
+        <p>
+          Mantener una buena salud mental nos permite manejar el estrés,
+          relacionarnos positivamente con los demás y tomar decisiones
+          saludables.
+        </p>
+      </>
+    ),
+  },
+  2: {
     title: "Preguntas frecuentes sobre la salud mental",
-    color: "#ffd54f",
+    content: (
+      <>
+        <h3>¿Qué es la depresión?</h3>
+        <p>
+          Es un trastorno del estado de ánimo caracterizado por tristeza
+          persistente y pérdida de interés en las actividades diarias.
+        </p>
+        <h3>¿Qué es la ansiedad?</h3>
+        <p>
+          Es un trastorno caracterizado por preocupación excesiva y miedo ante
+          situaciones cotidianas.
+        </p>
+        <h3>¿Qué es el trastorno bipolar?</h3>
+        <p>
+          Es un trastorno que causa cambios extremos en el estado de ánimo, de
+          la euforia a la depresión.
+        </p>
+      </>
+    ),
   },
-  {
-    id: 3,
+  3: {
     title: "Relación entre emoción y estado de ánimo",
-    color: "#80deea",
+    content: (
+      <>
+        <p>
+          Las emociones y los estados de ánimo están estrechamente relacionados
+          y afectan nuestra percepción y respuesta ante situaciones.
+        </p>
+        <p>
+          Un estado de ánimo positivo puede mejorar la salud mental, mientras
+          que emociones negativas pueden afectar el bienestar.
+        </p>
+      </>
+    ),
   },
-  { id: 4, title: "Consejos para controlar la ansiedad", color: "#f48fb1" },
-];
+  4: {
+    title: "Consejos para controlar la ansiedad",
+    content: (
+      <>
+        <ol>
+          <li>
+            Respira profundamente y realiza ejercicios de respiración lenta.
+          </li>
+          <li>Practica la atención plena para calmar la mente.</li>
+          <li>Mantén una rutina de sueño y ejercicio.</li>
+          <li>Limita el consumo de cafeína y alcohol.</li>
+          <li>Habla con alguien de confianza sobre tus preocupaciones.</li>
+        </ol>
+      </>
+    ),
+  },
+};
 
 const InformationPage = () => {
+  const { id } = useParams();
+  const navigate = useNavigate();
+  const topic = informationData[id];
+
+  if (!topic) {
+    return <p>El tema no existe.</p>;
+  }
+
   return (
-    <div className="main-page" style={{ textAlign: "center", padding: "20px" }}>
-      <h1>Sobre salud mental</h1>
-      <div
-        style={{
-          display: "flex",
-          justifyContent: "center",
-          gap: "20px",
-          flexWrap: "wrap",
-        }}
-      >
-        {topics.map((topic) => (
-          <Link to={`/information/${topic.id}`} key={topic.id}>
-            <div
-              style={{
-                width: "200px",
-                height: "150px",
-                backgroundColor: topic.color,
-                display: "flex",
-                alignItems: "center",
-                justifyContent: "center",
-                borderRadius: "10px",
-                color: "#000000",
-                fontWeight: "bold",
-                textAlign: "center",
-                cursor: "pointer",
-                boxShadow: "0px 4px 8px rgba(0, 0, 0, 0.2)",
-              }}
-            >
-              {topic.title}
-            </div>
-          </Link>
-        ))}
-      </div>
+    <div style={{ padding: "20px", textAlign: "center" }}>
+      <h2>{topic.title}</h2>
+      <div>{topic.content}</div>
+      <button onClick={() => navigate(-1)} style={{ marginTop: "20px" }}>
+        Volver
+      </button>
     </div>
   );
 };
 
 export default InformationPage;
 
-
-
-/*
-import React, { useState } from 'react'
-
-export const InformationPage = () => {
-  return (
-    <div className='information-page'>
-      <p>Página que muestra información relevante sobre la salud mental</p>
-    </div>
-  )
-}
-
-export default InformationPage
-*/
