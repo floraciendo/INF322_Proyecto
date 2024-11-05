@@ -22,6 +22,7 @@ const HomePage = () => {
   return (
     <div className="home-page">
       <h1>Bienvenido a la Página de Salud Mental 😊</h1>
+      <br />
       <div className="button-container">
         <button
           onClick={() => navigate("/questionary")}

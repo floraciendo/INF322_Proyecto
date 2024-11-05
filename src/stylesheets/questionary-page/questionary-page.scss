@@ -1,0 +1,30 @@
+.questionary-page {
+  text-align: center;
+  button {
+    padding: 10px 15px;
+    font-size: 14px;
+    font-weight: bold;
+    color: white;
+    background-color: #6c63ff;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+  }
+  button:hover {
+    background-color: #5b52d8;
+  }
+}
+
+#radioGroup .wrap {
+  display: inline-block;
+}
+#radioGroup label {
+  display: block;
+  text-align: center;
+  margin: 0 0.2em;
+}
+#radioGroup input[type="radio"] {
+  display: block;
+  margin: 0.5em auto;
+}

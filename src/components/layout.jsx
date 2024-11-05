@@ -17,7 +17,6 @@ const Layout = () => {
     <BrowserRouter>
       <div className="layout">
         <NavBar />
-        <h1 className="layout__title">Salud Mental</h1>
         <div className="layout__page">
           <Routes>
             <Route path="/" element={<HomePage />} />
