@@ -9,68 +9,98 @@ const informationData = {
       <>
         <p>
           La salud mental es fundamental para nuestro bienestar general, ya que
-          afecta cómo pensamos, sentimos y actuamos en nuestra vida diaria.
+          afecta cómo pensamos, sentimos y actuamos en nuestra vida diaria. Mantener
+          una buena salud mental nos permite manejar el estrés, relacionarnos
+          positivamente con los demás y tomar decisiones saludables.
         </p>
         <p>
-          Mantener una buena salud mental nos permite manejar el estrés,
-          relacionarnos positivamente con los demás y tomar decisiones
-          saludables.
+          Promover la salud mental es esencial para una vida equilibrada y plena,
+          especialmente en entornos como la educación, donde el estrés y la presión
+          son constantes.
         </p>
       </>
     ),
+    
   },
   2: {
     title: "Preguntas frecuentes sobre la salud mental",
     content: (
       <>
-        <h3>¿Qué es la depresión?</h3>
         <p>
-          Es un trastorno del estado de ánimo caracterizado por tristeza
-          persistente y pérdida de interés en las actividades diarias.
+          <strong>¿Qué es la depresión?</strong>
+          <br />
+          Es un trastorno del estado de ánimo con tristeza persistente, pérdida de
+          interés en actividades y fatiga. Puede causar cambios en el apetito, sueño
+          y afectar la vida diaria.
         </p>
-        <h3>¿Qué es la ansiedad?</h3>
         <p>
-          Es un trastorno caracterizado por preocupación excesiva y miedo ante
-          situaciones cotidianas.
+          <strong>¿Qué es la ansiedad?</strong>
+          <br />
+          Es un trastorno caracterizado por preocupación excesiva o miedo ante
+          situaciones cotidianas, con síntomas como inquietud, tensión,
+          palpitaciones y dificultad para concentrarse.
         </p>
-        <h3>¿Qué es el trastorno bipolar?</h3>
         <p>
-          Es un trastorno que causa cambios extremos en el estado de ánimo, de
-          la euforia a la depresión.
+          <strong>¿Qué es el trastorno bipolar?</strong>
+          <br />
+          Es un trastorno con cambios extremos de estado de ánimo entre manía (alta
+          energía y euforia) y depresión (tristeza profunda), afectando la vida
+          diaria significativamente.
         </p>
       </>
     ),
+    
   },
   3: {
     title: "Relación entre emoción y estado de ánimo",
     content: (
       <>
         <p>
-          Las emociones y los estados de ánimo están estrechamente relacionados
-          y afectan nuestra percepción y respuesta ante situaciones.
+          Las emociones y los estados de ánimo están estrechamente relacionados, ya
+          que ambos afectan cómo percibimos y respondemos a nuestro entorno. Las
+          emociones son reacciones intensas y de corta duración ante situaciones
+          específicas, como la alegría por una buena noticia o la tristeza por una
+          pérdida.
         </p>
         <p>
-          Un estado de ánimo positivo puede mejorar la salud mental, mientras
-          que emociones negativas pueden afectar el bienestar.
+          Por otro lado, los estados de ánimo son más persistentes y menos
+          específicos, influenciados por factores como el contexto social o el
+          bienestar físico. Aunque una emoción intensa puede desencadenar un estado
+          de ánimo prolongado, los estados de ánimo también pueden predisponer a
+          experimentar ciertas emociones con mayor frecuencia.
         </p>
       </>
     ),
+    
   },
   4: {
     title: "Consejos para controlar la ansiedad",
     content: (
       <>
-        <ol>
-          <li>
-            Respira profundamente y realiza ejercicios de respiración lenta.
-          </li>
-          <li>Practica la atención plena para calmar la mente.</li>
-          <li>Mantén una rutina de sueño y ejercicio.</li>
-          <li>Limita el consumo de cafeína y alcohol.</li>
-          <li>Habla con alguien de confianza sobre tus preocupaciones.</li>
-        </ol>
+        <p>
+          <strong>1. Respira profundamente:</strong> realiza ejercicios de
+          respiración lenta y profunda para calmar tu mente y reducir la tensión.
+        </p>
+        <p>
+          <strong>2. Practica la atención plena (mindfulness):</strong> dedica unos
+          minutos al día a estar presente, observando tus pensamientos sin
+          juzgarlos.
+        </p>
+        <p>
+          <strong>3. Mantén una rutina regular:</strong> establece horarios para
+          dormir, comer y ejercitarte, creando un sentido de estabilidad.
+        </p>
+        <p>
+          <strong>4. Limita el consumo de cafeína y azúcar:</strong> evita alimentos
+          y bebidas que puedan aumentar la sensación de ansiedad.
+        </p>
+        <p>
+          <strong>5. Busca apoyo:</strong> habla con amigos, familiares o un
+          profesional sobre tus preocupaciones para aliviar la carga emocional.
+        </p>
       </>
     ),
+    
   },
 };
 
