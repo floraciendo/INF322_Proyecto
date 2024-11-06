@@ -1,4 +1,11 @@
-# frontend-sample-app
+# Proyecto: Salud Mental
+
+### Integrantes
+- José Manuel Castro
+- Florencia Ramírez
+- Francisca Romero
+
+---
 
 Basic Frontend Development Environment to start an app with Webpack
 
