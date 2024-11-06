@@ -27,6 +27,13 @@ const informationData = {
     content: (
       <>
         <p>
+          <strong>¿Dónde pedir ayuda?</strong>
+          <br />
+          Existe la línea de prevención del suicidio que es gratuita y a través de ella, las personas que estén enfrentando una emergencia o crisis de salud mental asociada al suicidio, podrán contactarse con un psicólogo que los escuchará y ayudará de lunes a domingo, las 24 horas del día.
+          <br />
+          Para eso deberán llamar desde celulares de cualquier compañía al *4141 cuando requieran asistencia.
+        </p>
+        <p>
           <strong>¿Qué es la depresión?</strong>
           <br />
           Es un trastorno del estado de ánimo con tristeza persistente, pérdida de
