@@ -41,7 +41,7 @@ const MethodsPage = () => {
 
   return (
     <div className="methods-page">
-      <p>Diferentes métodos de relajación</p>
+      <h1>Diferentes métodos de relajación</h1>
       <div className="video-thumbnails">
         <div className="thumbnail" onClick={() => handleClick("https://www.youtube.com/embed/PHKrspKW06k")}>
          <img src={video1Thumbnail} alt="Video 1" />

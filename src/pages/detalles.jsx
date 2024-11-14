@@ -11,6 +11,7 @@ const topics = [
 const Detalle = () => {
   return (
     <div className="detalle" style={{ textAlign: "center", padding: "20px" }}>
+      <h1>Sobre salud mental</h1>
       <div
         style={{
           display: "grid",
