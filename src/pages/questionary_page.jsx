@@ -27,11 +27,11 @@ export const QuestionaryPage = () => {
           <h1>¿Cómo te haz sentido a lo largo del día?</h1>
           <div id="radioGroup">
             <div class="wrap">
-              <label for="1"><h1>😄</h1></label>
+              <label for="1"><h1>😞</h1></label>
               <input id="1" type="radio" value="1" name="opcion" />
             </div>
             <div class="wrap">
-              <label for="2"><h1>🙂</h1></label>
+              <label for="2"><h1>🙁</h1></label>
               <input id="2" type="radio" value="2" name="opcion" />
             </div>
             <div class="wrap">
@@ -39,11 +39,11 @@ export const QuestionaryPage = () => {
               <input id="3" type="radio" value="3" name="opcion" />
             </div>
             <div class="wrap">
-              <label for="4"><h1>🙁</h1></label>
+              <label for="4"><h1>🙂</h1></label>
               <input id="4" type="radio" value="4" name="opcion" />
             </div>
             <div class="wrap">
-              <label for="5"><h1>😞</h1></label>
+              <label for="5"><h1>😄</h1></label>
               <input id="5" type="radio" value="5" name="opcion" />
             </div>
           </div>
@@ -61,73 +61,73 @@ export const QuestionaryPage = () => {
             <div>
               <div className="wrap">
                 <input id="6" type="checkbox" />
-                <label htmlFor="6">Felicidad</label>
+                <label htmlFor="6">Ansiedad</label>
               </div>
               <div className="wrap">
                 <input id="7" type="checkbox" />
-                <label htmlFor="7">Paz</label>
+                <label htmlFor="7">Estrés</label>
               </div>
               <div className="wrap">
                 <input id="8" type="checkbox" />
-                <label htmlFor="8">Irritable</label>
+                <label htmlFor="8">Culpa</label>
               </div>
               <div className="wrap">
                 <input id="9" type="checkbox" />
-                <label htmlFor="9">Ansiedad</label>
+                <label htmlFor="9">Irritable</label>
               </div>
             </div>
             <div>
               <div className="wrap">
                 <input id="10" type="checkbox" />
-                <label htmlFor="10">Asombro</label>
+                <label htmlFor="10">Agobiado</label>
               </div>
               <div className="wrap">
                 <input id="11" type="checkbox" />
-                <label htmlFor="11">Orgullo</label>
+                <label htmlFor="11">Miedo</label>
               </div>
               <div className="wrap">
                 <input id="12" type="checkbox" />
-                <label htmlFor="12">Agobiado</label>
+                <label htmlFor="12">Decepción</label>
               </div>
               <div className="wrap">
                 <input id="13" type="checkbox" />
-                <label htmlFor="13">Decepción</label>
+                <label htmlFor="13">Pena</label>
               </div>
             </div>
             <div>
               <div className="wrap">
                 <input id="14" type="checkbox" />
-                <label htmlFor="14">Alivio</label>
+                <label htmlFor="14">Paz</label>
               </div>
               <div className="wrap">
                 <input id="15" type="checkbox" />
-                <label htmlFor="15">Valentía</label>
+                <label htmlFor="15">Alivio</label>
               </div>
               <div className="wrap">
                 <input id="16" type="checkbox" />
-                <label htmlFor="16">Estrés</label>
+                <label htmlFor="16">Asombro</label>
               </div>
               <div className="wrap">
                 <input id="17" type="checkbox" />
-                <label htmlFor="17">Culpa</label>
+                <label htmlFor="17">Diversión</label>
               </div>
             </div>
             <div>
               <div className="wrap">
                 <input id="18" type="checkbox" />
-                <label htmlFor="18">Confianza</label>
+                <label htmlFor="18">Felicidad</label>
               </div>
               <div className="wrap">
                 <input id="19" type="checkbox" />
-                <label htmlFor="19">Diversión</label>
+                <label htmlFor="19">Orgullo</label>
               </div>
               <div className="wrap">
                 <input id="20" type="checkbox" />
-                <label htmlFor="20">Miedo</label>
+                <label htmlFor="20">Confianza</label>
               </div>
               <div className="wrap">
                 <input id="21" type="checkbox" />
-                <label htmlFor="21">Pena</label>
+                <label htmlFor="21">Valentía</label>
               </div>
             </div>
           </div>
@@ -140,7 +140,7 @@ export const QuestionaryPage = () => {
       {/* Tercera pregunta */}
       {page === 3 && (
         <div>
-          <h1>¿Qué te está afectando más?</h1>
+          <h1>¿Qué aspectos están influyendo en cómo te sientes?</h1>
           <div id="checkGroup">
             <div>
               <div className="wrap">
