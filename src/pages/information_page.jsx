@@ -1,6 +1,8 @@
 import React from "react";
 import { useParams, useNavigate } from "react-router-dom";
 import "../Adornos/InformationPage.css";
+import saludMentalImg from "../imagenes/salud_mental.jpg";
+
 
 const informationData = {
   1: {
@@ -20,6 +22,7 @@ const informationData = {
         </p>
       </>
     ),
+    image: saludMentalImg,
     
   },
   2: {
@@ -122,13 +125,21 @@ const InformationPage = () => {
 
   return (
     <div className="information-page">
-      <h2>{topic.title}</h2>
-      <div>{topic.content}</div>
-      <button onClick={() => navigate(-1)} className="return-button">
-        Volver
-      </button>
+    <h2>{topic.title}</h2>
+    <div className="content-wrapper">
+      <img
+        src={topic.image}
+        alt={`Imagen relacionada con ${topic.title}`}
+        className="topic-image"
+      />
+      <div className="topic-content">{topic.content}</div>
     </div>
+    <button onClick={() => navigate(-1)} className="return-button">
+      Volver
+    </button>
+  </div>
   );
+  
 };
 
 export default InformationPage;

@@ -46,3 +46,24 @@
 .return-button:active {
   transform: scale(0.98);
 }
+
+
+.content-wrapper {
+  display: flex; /* Usamos Flexbox para organizar elementos en fila */
+  align-items: center; /* Alinea verticalmente la imagen y el texto al centro */
+  gap: 20px; /* Espacio entre la imagen y el texto */
+}
+
+.topic-image {
+  width: 70%; /* La imagen ocupa el 40% del ancho del contenedor */
+  max-width: 400px; /* Máximo tamaño de la imagen */
+  height: auto; /* Mantiene las proporciones de la imagen */
+  border-radius: 8px; /* Bordes redondeados */
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* Sombra opcional */
+}
+
+.topic-content {
+  flex: 1; /* El texto ocupa el resto del espacio disponible */
+  text-align: justify; /* Opcional: Justificar el texto */
+}
+
