@@ -7,6 +7,9 @@
   border-radius: 8px;
   box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
 }
+body {
+  background-color: #D4EDF5;
+}
 
 .home-page h1 {
   font-size: 36px; /* Título más grande, pero moderado */
@@ -20,13 +23,12 @@
   gap: 20px; /* Espacio entre imagen y botones */
 }
 
-.home-image {
-  width: 45%; /* Imagen ocupa el 45% del contenedor */
-  max-width: 500px; /* Tamaño máximo moderado */
-  height: auto;
-  border-radius: 8px;
-  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* Sombra sutil */
+.info-button:active {
+  transform: translateY(0px);
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
 }
+  
+
 
 .button-container {
   flex: 1;
