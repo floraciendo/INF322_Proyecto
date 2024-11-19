@@ -1,47 +1,43 @@
-/*
 .home-page {
+  padding: 30px; /* Espacio interno moderado */
+  max-width: 1200px; /* Contenedor no tan ancho */
+  margin: 0 auto;
   text-align: center;
-  padding: 50px;
-}
-
-.info-button {
-  background-color: #6c63ff;
-  color: white;
-  padding: 15px 30px;
-  font-size: 18px;
-  font-weight: bold;
-  border: none;
+  background-color: #f3f4f6;
   border-radius: 8px;
-  cursor: pointer;
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
 }
 
-.info-button:hover {
-  transform: translateY(-3px);
-  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+.home-page h1 {
+  font-size: 36px; /* Título más grande, pero moderado */
+  color: #3b3b3b;
+  margin-bottom: 20px;
 }
 
-.info-button:active {
-  transform: translateY(0px);
-  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
+.content-container {
+  display: flex; /* Organiza elementos en una fila */
+  align-items: center; /* Centra verticalmente imagen y botones */
+  gap: 20px; /* Espacio entre imagen y botones */
 }
-  */
 
-.home-page {
-  text-align: center;
+.home-image {
+  width: 45%; /* Imagen ocupa el 45% del contenedor */
+  max-width: 500px; /* Tamaño máximo moderado */
+  height: auto;
+  border-radius: 8px;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* Sombra sutil */
 }
 
 .button-container {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 50px; /* Espacio entre los botones */
-  margin-top: 20px;
+  flex: 1;
+  text-align: left;
 }
 
 .info-button {
-  padding: 15px 30px;
-  font-size: 18px;
+  display: block; /* Asegura que los botones estén en columna */
+  margin: 15px 0; /* Espacio entre botones */
+  padding: 16px 28px; /* Botones ligeramente más grandes */
+  font-size: 18px; /* Texto más grande pero no excesivo */
   font-weight: bold;
   color: white;
   background-color: #6c63ff;
@@ -56,6 +52,5 @@
 }
 
 .info-button:active {
-  transform: translateY(0px);
-  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
+  transform: scale(0.97);
 }
