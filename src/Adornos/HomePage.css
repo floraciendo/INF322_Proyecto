@@ -1,6 +1,6 @@
 .home-page {
-  padding: 30px; /* Espacio interno moderado */
-  max-width: 1200px; /* Contenedor no tan ancho */
+  padding: 30px;
+  max-width: 1200px;
   margin: 0 auto;
   text-align: center;
   background-color: #f3f4f6;
@@ -8,27 +8,25 @@
   box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
 }
 body {
-  background-color: #D4EDF5;
+  background-color: #d4edf5;
 }
 
 .home-page h1 {
-  font-size: 36px; /* Título más grande, pero moderado */
+  font-size: 36px;
   color: #3b3b3b;
   margin-bottom: 20px;
 }
 
 .content-container {
-  display: flex; /* Organiza elementos en una fila */
-  align-items: center; /* Centra verticalmente imagen y botones */
-  gap: 20px; /* Espacio entre imagen y botones */
+  display: flex;
+  align-items: center;
+  gap: 20px;
 }
 
 .info-button:active {
   transform: translateY(0px);
   box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
 }
-  
-
 
 .button-container {
   flex: 1;
@@ -36,10 +34,10 @@ body {
 }
 
 .info-button {
-  display: block; /* Asegura que los botones estén en columna */
-  margin: 15px 0; /* Espacio entre botones */
-  padding: 16px 28px; /* Botones ligeramente más grandes */
-  font-size: 18px; /* Texto más grande pero no excesivo */
+  display: block;
+  margin: 15px 0;
+  padding: 16px 28px;
+  font-size: 18px;
   font-weight: bold;
   color: white;
   background-color: #6c63ff;
@@ -55,4 +53,12 @@ body {
 
 .info-button:active {
   transform: scale(0.97);
+}
+
+.home-image {
+  width: 50%; 
+  max-width: 600px; 
+  height: auto;
+  border-radius: 10px; 
+  box-shadow: 0px 6px 10px rgba(0, 0, 0, 0.15); 
 }

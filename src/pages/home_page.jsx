@@ -1,7 +1,7 @@
 import React from "react";
 import { useNavigate } from "react-router-dom";
 import "../Adornos/HomePage.css";
-import saludMentalImg from "../imagenes/SM.jpg"; // Asegúrate de que esta sea la ruta correcta
+import saludMentalImg from "../imagenes/SM.jpg"; 
 
 const HomePage = () => {
   const navigate = useNavigate();
